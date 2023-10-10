@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>- Calculadora -</h1>
+
+  <form onsubmit="return calcularResultado()">
+
+    <label for="n1">Ingresa el primer número:</label>
+    <input type="text" id="n1" name="n1" required><br>
+
+    <label for="n2">Ingresa el segundo número:</label>
+    <input type="text" id="n2" name="n2" required><br>
+
+    <label for="operacion">Selecciona la operación que deseas:</label>
+    <select id="operacion" name="operacion">
+      <option value="su">Sumar (+)</option>
+      <option value="re">Restar (-)</option>
+      <option value="mu">Multiplicar (*)</option>
+      <option value="di">Dividir (/)</option>
+    </select><br>
+
+    <input type="submit" value="Calcular">
+  </form>
+
+  <p id="resultado"></p>
+
+   <script src="menu.js"></script>
+</body>
+</html>
